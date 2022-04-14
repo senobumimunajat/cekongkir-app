@@ -15,6 +15,8 @@ class CreateCouriersTable extends Migration
     {
         Schema::create('couriers', function (Blueprint $table) {
             $table->id();
+            $table->string('code');
+            $table->string('title');
             $table->timestamps();
         });
     }
